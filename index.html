@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachidanand Sahu Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Toggle between light and dark themes
+        function toggleTheme() {
+            const htmlElement = document.documentElement;
+            const themeToggleButton = document.getElementById('theme-toggle-button');
+
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                themeToggleButton.innerHTML = '🌜';
+                themeToggleButton.classList.replace('bg-gray-200', 'bg-gray-800');
+                themeToggleButton.classList.replace('text-black', 'text-white');
+            } else {
+                htmlElement.classList.add('dark');
+                themeToggleButton.innerHTML = '🌞';
+                themeToggleButton.classList.replace('bg-gray-800', 'bg-gray-200');
+                themeToggleButton.classList.replace('text-white', 'text-black');
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 bg-clip-text text-transparent">Sachidanand Sahu</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#profile" class="hover:text-gray-300">Profile</a></li>
+                    <li><a href="#skills" class="hover:text-gray-300">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+                    <li><a href="#achievements" class="hover:text-gray-300">Achievements</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle-button" onclick="toggleTheme()" class="bg-gray-800 text-white px-3 py-1 rounded">🌜</button>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-20 p-4">
+        <section id="profile" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-purple-300 text-transparent bg-clip-text">Profile</h2>
+            <p class="bg-white dark:bg-gray-800 p-6 rounded shadow border-l-4 border-purple-500">
+                Software Developer with 2 years of experience in Java, Spring Boot, and RESTful API development, specializing in creating secure, user-centric applications and optimizing system performance.
+            </p>
+        </section>
+
+        <section id="skills" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text">Skills</h2>
+            <ul class="bg-white dark:bg-gray-800 p-6 rounded shadow grid grid-cols-2 md:grid-cols-3 gap-4 border-l-4 border-blue-500">
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">💻 Java</li>
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">🛠 Spring Boot</li>
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">🔗 REST API</li>
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">🧪 Postman</li>
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">🌐 HTML, CSS, JavaScript</li>
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">🎨 Bootstrap</li>
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">🗄 MySQL</li>
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">📊 DSA</li>
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">🔧 Git Version Control</li>
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">💡 OOPs</li>
+                <li class="bg-blue-100 dark:bg-blue-900 p-2 rounded flex items-center gap-2 shadow-lg">☁ AWS</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-500 to-pink-300 text-transparent bg-clip-text">Projects</h2>
+            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow space-y-6 border-l-4 border-pink-500">
+                <div class="shadow-lg p-4 rounded bg-pink-100 dark:bg-pink-800">
+                    <h3 class="font-semibold text-pink-600 dark:text-pink-300">WIZED</h3>
+                    <p>Designed scalable backend systems using Java and integrated Razorpay payment API for secure transactions.</p>
+                </div>
+                <div class="shadow-lg p-4 rounded bg-pink-100 dark:bg-pink-800">
+                    <h3 class="font-semibold text-pink-600 dark:text-pink-300">RAPID LEAD</h3>
+                    <p>An application integrating Meta for bulk messaging with APIs for seamless communication in projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 bg-gradient-to-r from-green-500 to-green-300 text-transparent bg-clip-text">Achievements</h2>
+            <ul class="bg-white dark:bg-gray-800 p-6 rounded shadow list-disc pl-6 border-l-4 border-green-500">
+                <li>🏆 Winner In IndiaSkills Competition, New Delhi (2021).</li>
+                <li>🥉 Bronze Medalist in BRICS Skills Competition, China (2022).</li>
+                <li>🎖 Felicitated by Honorable Chief Minister of Odisha (2022).</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 bg-gradient-to-r from-yellow-500 to-yellow-300 text-transparent bg-clip-text">Contact</h2>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded shadow border-l-4 border-yellow-500">
+                <p><strong>📍 Location:</strong> Bangalore, India</p>
+                <p><strong>✉️ Email:</strong> <a href="mailto:sachisahu0501@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">sachisahu0501@gmail.com</a></p>
+                <p><strong>📞 Phone:</strong> +91-6372228775</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 text-center">
+        <p>&copy; 2025 Sachidanand Sahu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
